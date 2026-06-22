@@ -1,0 +1,237 @@
+/* MAIN WRAPPER */
+.company-overview {
+  background: #f8fafc;
+  color: #0a1f44;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================= HERO ================= */
+
+.contact-hero {
+  position: relative;
+  height: 45vh;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #dbeafe, #ffffff);
+  overflow: hidden;
+}
+
+/* Decorative Pattern */
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#0a1f4420 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: 0.5;
+}
+
+/* Blue Glow */
+.contact-hero::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(37, 99, 235, 0.12);
+  border-radius: 50%;
+  top: -180px;
+  right: -120px;
+  filter: blur(80px);
+}
+
+.hero-overlay {
+  display: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -1px;
+}
+
+.hero-content p {
+  margin-top: 18px;
+  font-size: 1.15rem;
+  color: #334155;
+  line-height: 1.8;
+}
+
+/* ================= CONTENT ================= */
+
+.overview-content {
+  padding: 90px 20px;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Section Blocks */
+.overview-content h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 22px;
+  position: relative;
+  padding-left: 18px;
+}
+
+/* Left Accent Line */
+.overview-content h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 38px;
+  border-radius: 10px;
+  background: #2563eb;
+}
+
+/* Lead Text */
+.lead-text,
+.lead-text2 {
+  font-size: 1.08rem;
+  color: #475569;
+  line-height: 2;
+  text-align: justify;
+  max-width: 1000px;
+}
+
+/* ================= CARDS ================= */
+
+.objective-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 50px;
+}
+
+/* Individual Card */
+.card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 38px 25px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top Accent */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(to right, #2563eb, #60a5fa);
+}
+
+/* Hover */
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Card Heading */
+.card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 0;
+  letter-spacing: 0.3px;
+}
+
+/* Card Text */
+.card p {
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin-top: 12px;
+}
+
+/* ================= CLOSING TEXT ================= */
+
+.closing-text {
+  margin-top: 70px;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #475569;
+  text-align: center;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .objective-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    height: auto;
+    padding: 100px 20px 80px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .overview-content {
+    padding: 70px 15px;
+  }
+
+  .overview-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .objective-cards {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .card {
+    padding: 32px 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .overview-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .lead-text,
+  .lead-text2 {
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+}

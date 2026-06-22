@@ -1,0 +1,137 @@
+.complaints-page {
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #0f172a;
+}
+
+.complaints-hero {
+  position: relative;
+  height: 45vh;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #dbeafe, #ffffff);
+  overflow: hidden;
+}
+
+.complaints-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#0a1f4420 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: 0.5;
+}
+
+.complaints-hero::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(37, 99, 235, 0.12);
+  border-radius: 50%;
+  top: -180px;
+  right: -120px;
+  filter: blur(80px);
+}
+
+.complaints-overlay {
+  display: none;
+}
+
+.complaints-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  padding: 0 20px;
+}
+
+.complaints-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.complaints-hero-content p {
+  margin-top: 18px;
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.8;
+}
+
+.complaints-content {
+  padding: 90px 20px;
+}
+
+.container-fluid {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.complaints-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 45px;
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.complaints-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #2563eb, #60a5fa);
+}
+
+.complaints-card p {
+  font-size: 1.04rem;
+  line-height: 2;
+  color: #475569;
+  margin-bottom: 28px;
+  text-align: justify;
+}
+
+.complaints-card p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .complaints-hero {
+    height: auto;
+    padding: 100px 20px 80px;
+  }
+
+  .complaints-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .complaints-content {
+    padding: 70px 15px;
+  }
+
+  .complaints-card {
+    padding: 28px 22px;
+  }
+
+  .complaints-card p {
+    font-size: 0.98rem;
+    line-height: 1.9;
+  }
+}
+
+@media (max-width: 480px) {
+  .complaints-hero-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .complaints-hero-content p {
+    font-size: 1rem;
+  }
+}

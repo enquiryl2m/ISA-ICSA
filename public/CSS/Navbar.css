@@ -1,0 +1,136 @@
+/* -------------------- Navbar Base -------------------- */
+.navbar {
+  height: 80px;
+  transition: all 0.3s ease;
+  padding: 0 1rem;
+  z-index: 999;
+  background-color: #ffffff !important;
+}
+
+body {
+  padding-top: 80px;
+}
+
+/* -------------------- Logo -------------------- */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.nav-logo {
+  height: 60px;
+  width: auto;
+}
+
+/* -------------------- Links -------------------- */
+.nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin: 0 20px;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0a1f44;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.text-navy {
+  color: #0a1f44 !important;
+}
+
+/* -------------------- FIX: MOBILE DARK ISSUE -------------------- */
+.navbar-collapse,
+.navbar-collapse.show,
+.collapsing {
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+}
+
+/* Remove Bootstrap animation glitch */
+.collapsing {
+  transition: none !important;
+  height: auto !important;
+}
+
+/* Force full width dropdown on mobile */
+@media (max-width: 992px) {
+  .navbar {
+    height: auto;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    background-color: #ffffff !important;
+  }
+
+  .nav-logo {
+    height: 50px;
+  }
+
+  .nav-link {
+    margin: 10px 20px;
+  }
+}
+
+/* Fix toggler icon weird rendering */
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  filter: none !important;
+}
+
+
+/* Remove all hamburger effects */
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent !important;
+}
+
+/* Remove focus, active, hover effects */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:hover {
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent !important;
+}
+
+/* Keep icon color consistent */
+.navbar-toggler-icon {
+  filter: none !important;
+  transition: none !important;
+}
+
+/* Optional: force exact color (dark icon) */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,\
+  %3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E\
+  %3Cpath stroke='rgba(10,31,68,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E\
+  %3C/svg%3E");
+}
