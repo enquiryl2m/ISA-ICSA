@@ -28,7 +28,7 @@ const Contact = () => {
 
           <div className="info-item">
             <span>📧</span>
-            <p>admin@isa2025.com</p>
+            <p>admin.inspection@tpingt.com</p>
           </div>
 
           <div className="info-item">

@@ -16,6 +16,8 @@ import Company_Overview from "./Pages/About/Company_Overview";
 import QualityPolicy from "./Pages/About/QualityPolicy";
 import Leadership from "./Pages/About/Leadership";
 
+import InspectionServices from "./Pages/InspectionServices";
+
 import PublicInformation from "./Pages/PublicInformation/PublicInformation";
 import ImpartialityPolicy from "./Pages/PublicInformation/ImpartialityPolicy";
 import ComplaintsAppeals from "./Pages/PublicInformation/ComplaintsAppeals";
@@ -131,6 +133,10 @@ const App = () => {
         <Route
           path="/about/leadership"
           element={<Leadership />}
+        />
+        <Route
+          path="/inspectionservices"
+          element={<InspectionServices />}
         />
 
       </Routes>

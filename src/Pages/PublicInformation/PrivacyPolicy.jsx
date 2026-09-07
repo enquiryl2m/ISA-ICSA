@@ -212,7 +212,7 @@ const PrivacyPolicy = () => {
 
             <div className="contact-box">
               <p><strong>ISA ICSA Private Limited (IIPL)</strong></p>
-              <p>Email: admin@isa2025.com</p>
+              <p>Email: admin.inspection@tpingt.com</p>
               <p>Phone: +91 9353512544</p>
               <p>Website: www.isa2025.com</p>
             </div>

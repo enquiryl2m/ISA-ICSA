@@ -119,6 +119,17 @@ export default function Navbar() {
               </ul>
             </li>
 
+            {/* Inspection Services */}
+            <li className="nav-item">
+              <NavLink
+                className="nav-link text-navy"
+                to="/inspectionservices"
+                onClick={handleNavClick}
+              >
+                Inspection Services 
+              </NavLink>
+            </li>
+
             {/* Public Information */}
             <li className="nav-item">
               <NavLink

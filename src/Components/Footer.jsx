@@ -43,7 +43,7 @@ const Footer = () => {
           <h4>Contact Us</h4>
           <p>#2 Floor 17/B1 Sector C, 1, KHB Yelahanka, Bengaluru - 560064, Karnataka</p>
           <p><a href="tel:+1234567890">+91 9353512544</a></p>
-          <p><a href="mailto:info@isaicsa.com">admin@isa2025.com</a></p>
+          <p><a href="mailto:info@isaicsa.com">admin.inspection@tpingt.com</a></p>
         </div>
       </div>
       <div className="footer-bottom">

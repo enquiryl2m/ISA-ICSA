@@ -35,17 +35,14 @@ export default function Intro() {
                     </h1>
 
                     <p className="intro-desc" data-aos="fade-right" data-aos-delay="200">
-                        ISA ICSA which stands for <b> Independent Safety Assessment Independent Cyber Security Assessment </b>
-                        is an <strong>independent inspection body</strong> delivering structured
-                        Third Party Inspection (TPI) services for advanced railway system products. <br /> <br />
-                        Our focus includes emerging technologies such as <strong>Artificial Intelligence</strong>, <strong>Machine Vision</strong> and other next-generation innovations shaping modern rail systems.
+                        ISA ICSA, which stands for <b>Independent Safety Assessment and Independent Cyber Security Assessment</b>, is an independent inspection body delivering structured Third Party Inspection (TPI) services across advanced railway systems and industrial products.  <br /> <br />
+
+                        Our expertise includes the inspection and assessment of advanced railway system products, with a focus on emerging technologies such as <b>Artificial Intelligence (AI), Machine Vision, and other next-generation innovations</b> shaping modern rail infrastructure. In addition, we provide independent inspection services for <b>UPVC</b> and <b>HDPE</b> products, ensuring they comply with applicable specifications, quality requirements, and industry standards. 
                     </p>
 
                     <p className="intro-desc" data-aos="fade-right" data-aos-delay="400">
-                        We support organizations in achieving the highest standards of safety, quality, reliability, and compliance
-                        through structured inspection and assessment services.
+                        We support organizations in achieving the highest standards of safety, quality, reliability, and compliance through impartial, consistent, and technically competent inspection and assessment services. 
                     </p>
-
                 </div>
 
                 {/* RIGHT */}
